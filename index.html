@@ -9,11 +9,43 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <script src="slide.js" defer></script>
-    <script src="scroll.js"></script>
 </head>
-<body onload="slide1()">
-    <img id="id">
+<body>
+    <!--slides-->
+    <section class="containerproje">
+        <div class="slide-container active">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Está a procura de um social media?</h3>
+                    <p>Nós temos o melhor serviço de social media, para aumnetar seus resultados e deixar sua marca cada vez mais famosa</p>
+                    <a href="#" class="btnproj">Entre em contato conosco</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Tráfego Pago</h3>
+                    <p>Precisando alavancar seus resultados? Nós oferecemos o melhor serviço de Tráfego Pago para anunciarmos sua marca e aumentar suas vendas</p>
+                    <a href="#" class="btnproj">Entre em contato conosco</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="slide-container">
+            <div class="slide">
+                <div class="contentproje">
+                    <h3>Design Gráfico</h3>
+                    <p>Somente a GHC possui o melhor design gráfico para você e para sua empresa!</p>
+                    <a href="#" class="btnproj">Entre em contato conosco</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="prev" onclick="prev()"> < </div>
+        <div id="next" onclick="next()"> > </div>
+    </section>
     <br><br><br>
     <!--contato-->
     <div class="contato">
@@ -41,15 +73,49 @@
     </div>
     <br><br>
     <!--serviços-->
+    <h2 style="text-align: center; font-size: 30px;">Nossos Serviços</h2>
+    <br><br>
+   <div class="servico">
+    <div class="social-media">
+    <img src="img/social-media.png" alt="">
+    <h3>Social Media</h3>
+    <p>Cuida das redes sociais da empresa</p>
+    </div>
+    
+    <div class="design-grafico">
+    <img src="img/design-grafico.jpg" alt="">
+    <h3>Design Gráfico</h3>
+    <p>Fazer as artes das redes sociais</p>
+    </div>
 
+    <div class="trafego">
+    <img src="img/trafego-pago.jpg" alt="">
+    <h3>Tráfego Pago</h3>
+    <p>Atua na gestão de anúncios/patrocinados</p>
+    </div>
 
+    <div class="criacao-conteudo">
+    <img src="img/criacao-conteudo.webp" alt="">
+    <h3>Criação de conteúdo</h3>
+    <p>Criar conteúdo estratégico</p>
+    </div>
+
+    <div class="marketing">
+    <img src="img/estrategia-marketing.webp" alt="">
+    <h3>Estratégia de Marketing</h3>
+    <p>Ações para atingir ás suas metas de divulgação</p>
+    </div>
+</div>
+    <br><br>
     <!--precisando...-->
     <div class="precisando">
         <img src="img/logo.jpg" alt="">
         <h1>Precisando....</h1>
         <p>De um social media? De um designer gráfico? De um Tráfego Pago?</p>
         <br>
-        <button><a href="https://api.whatsapp.com/message/G5QFV7CXS25GM1?autoload=1&app_absent=0">Clique aqui e fale diretamente conosco</a></button>
+        <a href="https://api.whatsapp.com/message/G5QFV7CXS25GM1?autoload=1&app_absent=0">
+        <button>Clique aqui e fale diretamente conosco</button>
+            </a>
     </div>
     
     <!--um pouco sobre nós-->
@@ -100,5 +166,7 @@
             <img src="img/insta.png" alt="">
         </a>
         </footer>
+
+        <script src="slide.js"></script>
 </body>
 </html>

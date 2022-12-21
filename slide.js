@@ -1,14 +1,16 @@
-function slide1(){
-    document.getElementById('id').src="img/logo.jpg";
-    setTimeout("slide2()", 3000)
-    }
-    
-    function slide2(){
-    document.getElementById('id').src="img/logo.jpg";
-    setTimeout("slide3()", 3000)
-    }
-    
-    function slide3(){
-    document.getElementById('id').src="img/logo.jpg";
-    setTimeout("slide1()", 3000)
-    }
+let slides = document.querySelectorAll('.slide-container');
+let index = 0;
+
+function next(){
+    slides[index].classList.remove('active');
+    index = (index + 1) % slides.length;
+    slides[index].classList.add('active');
+}
+
+function prev(){
+    slides[index].classList.remove('active');
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add('active');
+}
+
+setInterval(next, 6000);
